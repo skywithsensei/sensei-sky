@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#06101f">
+<meta name="description" content="Sensei — Sky: Children of the Light tent shortcuts, wing light locations, maps and guides.">
+<title>Sensei — Sky Tents, Wing Lights & Guides</title>
+<style>
+:root{--bg:#050b15;--panel:#081525;--panel2:#0b1b30;--line:#163654;--blue:#48b8ff;--cyan:#93ddff;--text:#eef6ff;--muted:#a7bad1;--gold:#ffd38a}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(ellipse at 50% -10%,#153a66 0,transparent 42%),var(--bg);color:var(--text);font:15px/1.55 system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif}
+a{color:inherit;text-decoration:none}button,input{font:inherit}button{cursor:pointer}
+.topbar{position:sticky;top:0;z-index:10;display:flex;align-items:center;justify-content:space-between;gap:18px;padding:14px clamp(16px,4vw,52px);background:#050b15ed;border-bottom:1px solid #18324d;backdrop-filter:blur(16px)}
+.brand{display:flex;align-items:center;gap:10px;font-size:27px;font-weight:800;letter-spacing:.5px}.brand-mark{display:grid;place-items:center;width:42px;height:42px;border:1px solid #3e92d1;border-radius:14px;color:var(--cyan);background:linear-gradient(145deg,#14385a,#07111f);box-shadow:0 0 22px #228fe522}.brand small{display:block;color:var(--muted);font-size:10px;font-weight:500;letter-spacing:1.7px;text-transform:uppercase;margin-top:-5px}
+.nav{display:flex;gap:7px;flex-wrap:wrap}.nav a{padding:9px 12px;border-radius:9px;color:#d5e5f7;font-size:13px}.nav a:hover,.nav a.active{background:#102b47;color:var(--cyan)}
+.menu-btn{display:none;background:#0b2036;color:white;border:1px solid var(--line);border-radius:9px;padding:8px 12px}
+.wrap{width:min(1380px,100% - 34px);margin:22px auto 50px}
+.hero{position:relative;overflow:hidden;min-height:320px;border:1px solid #1a4d76;border-radius:22px;padding:clamp(28px,6vw,72px);background-image:linear-gradient(90deg,rgba(3,10,22,.92) 0%,rgba(4,15,32,.70) 42%,rgba(4,15,32,.12) 100%),url('assets/sensei-hero-art.png');background-size:cover;background-position:center 48%;box-shadow:0 18px 55px #0005}
+.hero:after{content:"";position:absolute;pointer-events:none;left:0;right:0;bottom:0;height:1px;background:linear-gradient(90deg,transparent,#8cd9ff,transparent);box-shadow:0 0 24px #56bfff}
+.hero-content{position:relative;z-index:1;max-width:720px}.eyebrow{color:var(--cyan);text-transform:uppercase;letter-spacing:3px;font-size:11px;font-weight:700}.hero h1{font-size:clamp(44px,7vw,78px);line-height:1;margin:13px 0 15px;letter-spacing:-3px}.hero h1 span{color:var(--cyan);text-shadow:0 0 30px #43b8ff55}.hero p{max-width:540px;color:#c4d7ec;font-size:17px;margin:0 0 23px}.actions{display:flex;gap:10px;flex-wrap:wrap}.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;border:1px solid #2877aa;border-radius:999px;padding:11px 19px;background:#0b2a46;color:#eaf8ff;font-weight:650;font-size:13px;transition:.2s}.btn.primary{background:linear-gradient(100deg,#1279bb,#2ca7ed);border-color:#69caff;color:white;box-shadow:0 8px 25px #0786ce2b}.btn:hover{transform:translateY(-2px);filter:brightness(1.12)}
+.hero-note{position:absolute;right:7%;bottom:25px;color:#c2d8ef;font-size:12px;letter-spacing:2px;text-transform:uppercase}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin:17px 0 28px}.stat,.card,.guide-card,.update{background:linear-gradient(145deg,#0a1b2d,#07111f);border:1px solid var(--line);border-radius:15px}.stat{padding:16px 19px}.stat strong{display:block;font-size:25px;color:var(--cyan)}.stat span{color:var(--muted);font-size:12px}
+.section{margin-top:32px;scroll-margin-top:90px}.section-head{display:flex;align-items:end;justify-content:space-between;gap:12px;margin-bottom:14px}.section-head h2{margin:0;font-size:24px;letter-spacing:-.5px}.section-head p{margin:3px 0 0;color:var(--muted);font-size:13px}.tiny-link{color:var(--cyan);font-size:12px}
+.feature-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:13px}.card{padding:20px;min-height:188px;transition:.2s;background-image:linear-gradient(180deg,rgba(5,15,28,.42),rgba(5,15,28,.97)),url('assets/sensei-hero-art.png');background-size:cover;background-position:center}.card:hover,.guide-card:hover{transform:translateY(-3px);border-color:#3c91c9}.card .symbol{font-size:27px;color:var(--cyan);margin-bottom:12px}.card h3{margin:0 0 6px;font-size:18px}.card p{color:var(--muted);font-size:13px;margin:0 0 16px}.card button{border:0;background:none;color:var(--cyan);padding:0;font-weight:700;font-size:12px}
+.toolbar{display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin:14px 0}.search{flex:1;min-width:210px;background:#071422;border:1px solid #1b4262;color:white;padding:12px 14px;border-radius:11px;outline:none}.search:focus{border-color:var(--blue);box-shadow:0 0 0 3px #42b7ff19}.filters{display:flex;gap:7px;flex-wrap:wrap}.filter{border:1px solid var(--line);background:#091827;color:#c8d8e9;padding:9px 13px;border-radius:999px;font-size:12px}.filter.active,.filter:hover{background:#103a5c;border-color:#3689bf;color:white}
+.tent-grid,.guide-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:13px}.tent{overflow:hidden}.tent-art{height:110px;display:grid;place-items:center;font-size:38px;background:radial-gradient(circle at 50% 60%,#2776a2,#0b2740 45%,#07111f 80%);border-bottom:1px solid var(--line);position:relative}.tent:nth-child(2n) .tent-art{background:radial-gradient(circle at 50% 60%,#4b7c9e,#14334c 45%,#07111f 80%)}.tent:nth-child(3n) .tent-art{background:radial-gradient(circle at 50% 60%,#3d776b,#12302f 45%,#07111f 80%)}.tent:nth-child(4n) .tent-art{background:radial-gradient(circle at 50% 60%,#886047,#3b241e 45%,#07111f 80%)}.tag{position:absolute;right:9px;top:9px;background:#06111ddd;border:1px solid #315a78;border-radius:99px;padding:3px 8px;font-size:10px;color:var(--cyan)}.tent-body{padding:13px}.tent-body h3{font-size:15px;margin:0 0 4px}.tent-body p{color:var(--muted);font-size:12px;margin:0 0 10px}.tent-body button,.guide-card button{border:1px solid #205477;background:#0a2034;color:#bdeaff;border-radius:8px;padding:8px 10px;font-size:11px;font-weight:650}
+.guide-grid{grid-template-columns:repeat(3,1fr)}.guide-card{padding:17px;display:flex;gap:13px;align-items:flex-start}.guide-icon{flex:0 0 42px;height:42px;display:grid;place-items:center;border:1px solid #235c80;background:#0c2a43;border-radius:12px;font-size:21px}.guide-card h3{margin:0 0 4px;font-size:15px}.guide-card p{margin:0 0 10px;color:var(--muted);font-size:12px}
+.updates-layout{display:grid;grid-template-columns:1.4fr 1fr;gap:14px}.update{padding:18px}.update-row{display:flex;gap:12px;padding:11px 0;border-bottom:1px solid #142b41}.update-row:last-child{border:0}.dot{color:var(--gold)}.update-row strong{display:block;font-size:13px}.update-row small{color:var(--muted);font-size:11px}.quote{display:flex;flex-direction:column;justify-content:center;min-height:190px;background:radial-gradient(circle at 85% 5%,#16446b,#091625 55%);}.quote blockquote{font-size:22px;font-style:italic;margin:0 0 14px}.quote span{color:var(--cyan);font-size:12px}
+footer{border-top:1px solid #18334d;padding:24px clamp(16px,4vw,52px);display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;color:var(--muted);font-size:12px}footer strong{color:var(--text);font-size:17px}
+.modal-backdrop{position:fixed;inset:0;background:#000a;z-index:30;display:none;place-items:center;padding:18px}.modal-backdrop.open{display:grid}.modal{width:min(560px,100%);background:#081626;border:1px solid #2b648a;border-radius:18px;padding:24px;box-shadow:0 25px 90px #0009}.modal-top{display:flex;justify-content:space-between;gap:15px;align-items:center}.modal h2{margin:0}.close{border:1px solid var(--line);background:#0d2237;color:white;border-radius:9px;padding:5px 10px}.modal p,.modal li{color:#c0d0e2;font-size:14px}.modal .note{border-left:3px solid var(--blue);padding:10px 13px;background:#0a2136;border-radius:0 9px 9px 0;font-size:12px;color:#c6d9ed}
+.empty{display:none;color:var(--muted);padding:20px;text-align:center;border:1px dashed var(--line);border-radius:12px}
+@media(max-width:1000px){.feature-grid{grid-template-columns:repeat(2,1fr)}.tent-grid{grid-template-columns:repeat(2,1fr)}.guide-grid{grid-template-columns:repeat(2,1fr)}.hero-note{display:none}.nav a{padding:8px}.stats{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:650px){.topbar{flex-wrap:wrap}.menu-btn{display:block}.nav{display:none;width:100%;flex-direction:column}.nav.open{display:flex}.nav a{padding:10px}.wrap{width:calc(100% - 22px);margin-top:12px}.hero{min-height:310px;padding:30px 22px}.hero h1{letter-spacing:-2px}.hero p{font-size:15px}.stats{gap:8px}.stat{padding:12px}.stat strong{font-size:21px}.feature-grid,.tent-grid,.guide-grid,.updates-layout{grid-template-columns:1fr}.section-head{align-items:start;flex-direction:column}.card{min-height:0}.guide-card{padding:14px}}
+</style>
+</head>
+<body>
+<header class="topbar">
+  <a class="brand" href="#home" aria-label="Sensei home"><span class="brand-mark">✦</span><span>Sensei<small>Sky · Tents · Wing Lights · Guides</small></span></a>
+  <button class="menu-btn" id="menuBtn" aria-expanded="false">☰ Menu</button>
+  <nav class="nav" id="nav"><a class="active" href="#home">⌂ Home</a><a href="#tents">✧ Tents</a><a href="#winglights">✦ Wing Lights</a><a href="#guides">▤ Guides</a><a href="#updates">◷ Updates</a><a href="#about">About</a></nav>
+</header>
+<main class="wrap">
+  <section class="hero" id="home">
+    <div class="hero-content">
+      <div class="eyebrow">A guide for every Sky Kid</div>
+      <h1>Sensei<span>.</span></h1>
+      <p>Your companion for Sky: Children of the Light. Find Shared Memory tents, wing light routes, shortcuts and practical guides—all in one place.</p>
+      <div class="actions"><a class="btn primary" href="#tents">Explore Tents ↗</a><a class="btn" href="#guides">Read Guides →</a></div>
+    </div>
+    <div class="hero-note">Explore · Find · Fly · Together ✦</div>
+  </section>
+
+  <section class="stats" aria-label="Creator stats">
+    <div class="stat"><strong>10K+</strong><span>Creator community</span></div><div class="stat"><strong>200+</strong><span>Tents & guides</span></div><div class="stat"><strong>7</strong><span>Realms to explore</span></div><div class="stat"><strong>∞</strong><span>Sky memories</span></div>
+  </section>
+
+  <section class="section" id="categories">
+    <div class="section-head"><div><h2>Find your next shortcut</h2><p>Choose a path and start exploring.</p></div></div>
+    <div class="feature-grid">
+      <article class="card"><div class="symbol">⌂</div><h3>Tents</h3><p>Shared Memory tent shortcuts, teleport tips and creator notes.</p><button data-jump="tents">Browse Tents →</button></article>
+      <article class="card" id="winglights"><div class="symbol">✦</div><h3>Wing Lights</h3><p>Realm-by-realm locations to help plan your collection route.</p><button data-filter="Wing Lights">View Wing Lights →</button></article>
+      <article class="card"><div class="symbol">◈</div><h3>Maps</h3><p>Explore realms and follow a clear route through each area.</p><button data-jump="tents">Explore Maps →</button></article>
+      <article class="card"><div class="symbol">▤</div><h3>Guides</h3><p>Helpful tips, tricks and Sky knowledge for your next journey.</p><button data-jump="guides">Read Guides →</button></article>
+    </div>
+  </section>
+
+  <section class="section" id="tents">
+    <div class="section-head"><div><h2>✧ Featured Tents</h2><p>Search the collection or filter by type.</p></div><a class="tiny-link" href="#tents">Explore collection ↓</a></div>
+    <div class="toolbar"><input class="search" id="search" type="search" placeholder="Search tents, realms, wing lights…" aria-label="Search guides and tents"><div class="filters" id="filters"><button class="filter active" data-category="All">All</button><button class="filter" data-category="Tents">Tents</button><button class="filter" data-category="Wing Lights">Wing Lights</button><button class="filter" data-category="Guides">Guides</button></div></div>
+    <div class="tent-grid" id="tentGrid">
+      <article class="card tent" data-category="Tents" data-search="hidden forest tent fast easy forest shared memory"><div class="tent-art">🌲<span class="tag">Fast & Easy</span></div><div class="tent-body"><h3>Hidden Forest Tent</h3><p>Hidden Forest · Shortcut</p><button data-detail="hidden">Open guide →</button></div></article>
+      <article class="card tent" data-category="Wing Lights" data-search="sanctuary island geyser turtle 8 wl wing lights"><div class="tent-art">🌊<span class="tag">8 WL</span></div><div class="tent-body"><h3>Geyser → Turtle</h3><p>Sanctuary Island · 8 Wing Lights</p><button data-detail="geyser">Open guide →</button></div></article>
+      <article class="card tent" data-category="Wing Lights" data-search="forest cavern map 3 4 wl wing lights"><div class="tent-art">🕯️<span class="tag">4 WL</span></div><div class="tent-body"><h3>Forest Cavern · Map 3</h3><p>Forest · 4 Wing Lights</p><button data-detail="cavern">Open guide →</button></div></article>
+      <article class="card tent" data-category="Wing Lights" data-search="daylight prairie temple all wing lights"><div class="tent-art">☀️<span class="tag">All WL</span></div><div class="tent-body"><h3>Daylight Prairie → Temple</h3><p>Daylight Prairie · Full route</p><button data-detail="prairie">Open guide →</button></div></article>
+      <article class="card tent" data-category="Tents" data-search="penguin obb shortcut out of bounds"><div class="tent-art">🐧<span class="tag">Shortcut</span></div><div class="tent-body"><h3>Penguin OBB Shortcut</h3><p>Out of Bounds · Community tip</p><button data-detail="penguin">Open guide →</button></div></article>
+      <article class="card tent" data-category="Guides" data-search="eden tent guide safety winged light route"><div class="tent-art">🌌<span class="tag">Guide</span></div><div class="tent-body"><h3>Eden Tent Guide</h3><p>Eden · Route notes</p><button data-detail="eden">Open guide →</button></div></article>
+      <article class="card tent" data-category="Tents" data-search="wasteland bird obb coming soon"><div class="tent-art">🪽<span class="tag">Coming soon</span></div><div class="tent-body"><h3>Wasteland & Bird OBB</h3><p>Work in progress</p><button data-detail="coming">View status →</button></div></article>
+      <article class="card tent" data-category="Guides" data-search="daily quests candles beginner tips"><div class="tent-art">✨<span class="tag">Quick tips</span></div><div class="tent-body"><h3>Daily Quest Route</h3><p>Simple daily checklist</p><button data-detail="daily">Open guide →</button></div></article>
+    </div>
+    <div class="empty" id="empty">No results found. Try a different keyword or category.</div>
+  </section>
+
+  <section class="section" id="guides">
+    <div class="section-head"><div><h2>▤ Latest Guides</h2><p>Small tips that make every journey easier.</p></div></div>
+    <div class="guide-grid">
+      <article class="guide-card"><div class="guide-icon">🕯️</div><div><h3>How to use OBB shortcuts</h3><p>Understand the basics and check each route's notes before trying it.</p><button data-detail="obb">Read guide →</button></div></article>
+      <article class="guide-card"><div class="guide-icon">🌊</div><div><h3>Water Trial long jump</h3><p>Practice timing and movement patiently; controls can vary by device.</p><button data-detail="trial">Read guide →</button></div></article>
+      <article class="guide-card"><div class="guide-icon">🕯️</div><div><h3>Eden candle planner</h3><p>Plan your weekly run and keep track of your own candle goals.</p><button data-detail="candles">Read guide →</button></div></article>
+      <article class="guide-card"><div class="guide-icon">☀️</div><div><h3>Daily quest routine</h3><p>A simple checklist to keep your daily Sky time organised.</p><button data-detail="daily">Read guide →</button></div></article>
+      <article class="guide-card"><div class="guide-icon">🪽</div><div><h3>Wing Light route planning</h3><p>Use realm names and route notes to make your collection trip clearer.</p><button data-detail="route">Read guide →</button></div></article>
+      <article class="guide-card"><div class="guide-icon">🗺️</div><div><h3>How to submit a tent</h3><p>Prepare the realm, location, requirements and a short explanation.</p><button data-detail="submit">Read guide →</button></div></article>
+    </div>
+  </section>
+
+  <section class="section" id="updates">
+    <div class="section-head"><div><h2>◷ Latest Updates</h2><p>Example update board—edit these entries as you publish new guides.</p></div></div>
+    <div class="updates-layout">
+      <div class="update">
+        <div class="update-row"><span class="dot">✦</span><div><strong>Hidden Forest Tent — Fast & Easy</strong><small>Featured · Shortcut guide</small></div></div>
+        <div class="update-row"><span class="dot">✦</span><div><strong>Penguin OBB Shortcut Added</strong><small>New tent entry</small></div></div>
+        <div class="update-row"><span class="dot">✧</span><div><strong>Wasteland & Bird OBB</strong><small>Coming soon</small></div></div>
+        <div class="update-row"><span class="dot">✦</span><div><strong>Eden Tent Guide Refreshed</strong><small>Route notes</small></div></div>
+      </div>
+      <aside class="update quote" id="about"><blockquote>“Same sky,<br>different stories.”</blockquote><span>— Sensei · Sky Kid community</span><p style="color:var(--muted);font-size:12px;margin-bottom:0">A fan-made guide hub. Not affiliated with thatgamecompany.</p></aside>
+    </div>
+  </section>
+</main>
+<footer><div><strong>✦ Sensei</strong><br>Sky · Tents · Wing Lights · Guides</div><div>A little light can guide you a long way.</div><div>Fan-made project · <a href="#home">Back to top ↑</a></div></footer>
+
+<div class="modal-backdrop" id="modalBackdrop" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+  <div class="modal"><div class="modal-top"><h2 id="modalTitle">Guide</h2><button class="close" id="closeModal" aria-label="Close">✕</button></div><div id="modalContent"></div></div>
+</div>
+<script>
+const details={
+ hidden:{title:"Hidden Forest Tent",body:"<p>A shortcut entry for the Hidden Forest area. Add your exact Shared Memory location, required props and a short clip or screenshot before publishing this guide.</p><ul><li>Realm: Hidden Forest</li><li>Type: Shared Memory tent / shortcut</li><li>Status: Featured</li></ul><div class='note'>Creator note: test the route on more than one device or FPS setting when possible. Shortcuts may change after game updates.</div>"},
+ geyser:{title:"Geyser → Turtle · Sanctuary Island",body:"<p>A route entry for the Sanctuary Island geyser and turtle area.</p><ul><li>Area: Sanctuary Island</li><li>Wing Lights: 8 (as listed in this site's sample entry)</li><li>Add a route video and current location notes before publishing.</li></ul><div class='note'>Always verify the current in-game route before relying on a community guide.</div>"},
+ cavern:{title:"Forest Cavern · Map 3",body:"<p>Shared Memory entry for the Forest Cavern route.</p><ul><li>Realm: Hidden Forest</li><li>Wing Lights: 4 (sample listing)</li><li>Suggested content: route order, starting point and a short clip.</li></ul>"},
+ prairie:{title:"Daylight Prairie → Temple",body:"<p>A full-route guide placeholder for Wing Lights in Daylight Prairie.</p><ul><li>Realm: Daylight Prairie</li><li>Coverage: all route points (verify and add exact locations)</li><li>Suggested content: numbered stops and a map image.</li></ul>"},
+ penguin:{title:"Penguin OBB Shortcut",body:"<p>Community shortcut entry. Add tested steps, prerequisites and a demonstration clip here.</p><div class='note'>Out-of-bounds routes are unofficial and may stop working. Use at your own discretion and follow the game's rules.</div>"},
+ eden:{title:"Eden Tent Guide",body:"<p>Use this page to document the route, starting point, requirements and any known limitations for the Eden tent.</p><ul><li>Include clear steps and a recent verification date.</li><li>Explain any risks of losing time or needing to restart.</li></ul>"},
+ coming:{title:"Coming soon",body:"<p>The Wasteland and Bird OBB guide is marked as in progress. Replace this note with tested instructions when your guide is ready.</p>"},
+ daily:{title:"Daily Quest Routine",body:"<p>A simple routine can help you organise your Sky session:</p><ul><li>Check the daily quests in-game.</li><li>Plan nearby realms together to reduce backtracking.</li><li>Confirm candle and event details in-game, since they can change.</li></ul>"},
+ obb:{title:"How to use OBB shortcuts",body:"<p>Before following a community shortcut, read its requirements and watch the whole demonstration. Move carefully, note your starting location, and remember that game updates can change routes.</p><div class='note'>This page is a template. Add your own tested steps and media before sharing it as a complete guide.</div>"},
+ trial:{title:"Water Trial long jump",body:"<p>Practice in short sessions: learn the timing, observe your character's momentum and repeat the same section until it feels consistent. Device performance and control settings can affect results.</p>"},
+ candles:{title:"Eden candle planner",body:"<p>Record your run date, time spent and the candle total shown in-game. Weekly limits and rewards can change, so verify the current rules before planning around a specific number.</p>"},
+ route:{title:"Wing Light route planning",body:"<p>Organise a route by realm, then list each stop in order. Include a screenshot or map, the nearest landmark and a date when the route was last checked.</p>"},
+ submit:{title:"How to submit a tent",body:"<p>Prepare the tent title, realm, exact area, required props, a short explanation and a video or screenshot. Keep the instructions concise so another Sky Kid can follow them.</p>"}
+};
+const modal=document.getElementById('modalBackdrop'), title=document.getElementById('modalTitle'), content=document.getElementById('modalContent');
+function openDetail(key){const d=details[key]||details.submit;title.textContent=d.title;content.innerHTML=d.body;modal.classList.add('open');document.getElementById('closeModal').focus()}
+function closeDetail(){modal.classList.remove('open')}
+document.querySelectorAll('[data-detail]').forEach(b=>b.addEventListener('click',()=>openDetail(b.dataset.detail)));
+document.getElementById('closeModal').addEventListener('click',closeDetail);
+modal.addEventListener('click',e=>{if(e.target===modal)closeDetail()});
+document.addEventListener('keydown',e=>{if(e.key==='Escape')closeDetail()});
+document.querySelectorAll('[data-jump]').forEach(b=>b.addEventListener('click',()=>document.getElementById(b.dataset.jump).scrollIntoView({behavior:'smooth'})));
+const search=document.getElementById('search'), cards=[...document.querySelectorAll('#tentGrid .tent')], filters=[...document.querySelectorAll('.filter')], empty=document.getElementById('empty');let category='All';
+function applyFilters(){let q=search.value.trim().toLowerCase(),shown=0;cards.forEach(c=>{let matchCat=category==='All'||c.dataset.category===category;let matchQ=(c.dataset.search+' '+c.innerText).toLowerCase().includes(q);c.style.display=matchCat&&matchQ?'':'none';if(matchCat&&matchQ)shown++});empty.style.display=shown?'none':'block'}
+search.addEventListener('input',applyFilters);filters.forEach(f=>f.addEventListener('click',()=>{category=f.dataset.category;filters.forEach(x=>x.classList.toggle('active',x===f));applyFilters()}));
+document.querySelectorAll('[data-filter]').forEach(b=>b.addEventListener('click',()=>{category=b.dataset.filter;filters.forEach(x=>x.classList.toggle('active',x.dataset.category===category));applyFilters();document.getElementById('tents').scrollIntoView({behavior:'smooth'})}));
+const menuBtn=document.getElementById('menuBtn'), nav=document.getElementById('nav');menuBtn.addEventListener('click',()=>{let open=nav.classList.toggle('open');menuBtn.setAttribute('aria-expanded',String(open))});nav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{nav.classList.remove('open');menuBtn.setAttribute('aria-expanded','false')}));
+const sections=[...document.querySelectorAll('main section[id]')];const navLinks=[...nav.querySelectorAll('a')];if('IntersectionObserver'in window){const io=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting)navLinks.forEach(a=>a.classList.toggle('active',a.getAttribute('href')==='#'+e.target.id))}),{rootMargin:'-35% 0px -55% 0px'});sections.forEach(s=>io.observe(s))}
+</script>
+</body>
+</html>
