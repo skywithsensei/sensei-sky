@@ -67,6 +67,50 @@ footer{border-top:1px solid #20314a;padding:15px 26px;display:flex;align-items:c
  footer>div:last-child{width:100%;line-height:1.8}
 }
 
+
+/* Final responsive corrections */
+@media(max-width:1200px){
+ .layout{grid-template-columns:165px minmax(0,1fr);align-items:start}
+ .rightcol{display:block;grid-column:2;grid-row:2;padding:0;margin:8px 0 18px}
+ .profile{height:auto;min-height:240px}
+}
+@media(max-width:800px){
+ .topbar{display:flex!important;height:auto;min-height:0;padding:10px 12px;flex-wrap:wrap;gap:8px}
+ .brand{display:flex!important;min-width:0!important;flex:1 1 100%;margin:0}
+ .brand-name{font-size:28px}
+ .nav{display:flex!important;order:2;flex:1 1 100%;width:100%;overflow-x:auto;gap:14px;justify-content:flex-start;padding:5px 0}
+ .nav a{font-size:11px;flex:0 0 auto;padding:5px 0}
+ .search,.social{display:none!important}
+ .layout{display:block!important;width:100%;max-width:100%;padding:0 10px 12px!important;margin:0}
+ .sidebar{display:none!important}
+ main{display:block;width:100%;max-width:100%;min-width:0;padding:0;overflow:visible}
+ .hero{height:230px;width:100%;border-radius:12px;background-position:center;background-size:cover}
+ .hero-content{display:none!important}
+ .category-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:9px;margin:10px 0 18px}
+ .category{min-width:0;min-height:165px;padding:11px}
+ .category h3{font-size:15px}
+ .category p{font-size:11px;min-height:40px}
+ .outline-btn{font-size:10px;padding:7px 3px}
+ .section{margin:0 0 18px;min-width:0}
+ .featured{grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}
+ .feature-card{min-width:0}
+ .feature-img{height:115px}
+ .feature-info{display:none!important}
+ .feature-img .pill{display:none!important}
+ .guides{grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}
+ .guide{height:105px;padding:40px 8px 7px}
+ .guide strong,.guide span{display:none!important}
+ .rightcol{display:block!important;width:100%;padding:0;margin:8px 0 18px}
+ .profile{height:auto;min-height:0;padding:14px}
+ .avatar{width:64px;height:64px}
+ .stats{margin-top:18px}
+ .updates,.quick{display:block!important}
+ .quick-bottom{height:110px}
+ footer{display:flex;flex-wrap:wrap;align-items:flex-start;padding:14px;gap:10px}
+ footer>div:last-child{width:100%;line-height:1.8}
+ .footer-center{display:none}
+}
+
 </style>
 </head>
 <body>
@@ -108,7 +152,7 @@ footer{border-top:1px solid #20314a;padding:15px 26px;display:flex;align-items:c
  </section>
 </main>
 <aside class="rightcol" id="about">
- <section class="profile"><div class="profile-head"><img class="avatar" src="profile.jpg" alt="Sky creator profile"><div><div class="handle">that_sky_senpai</div><div class="role">Sky Creator</div><div class="follow">◎ &nbsp;Follow for more!</div></div></div><div class="stats"><div><strong>10K+</strong><span>Followers</span></div><div><strong>200+</strong><span>Tents & Guides</span></div><div><strong>100%</strong><span>Sky Love</span></div></div><div class="profile-quote">“Same sky,<br>different stories.”<span>✦</span></div></section>
+ <section class="profile"><div class="profile-head"><img class="avatar" src="profile.jpg" alt="Sky creator profile"><div><div class="handle">that_sky_senpai</div><div class="role">Sky Creator</div><div class="follow">◎ &nbsp;Follow for more!</div></div></div><div class="stats"><div><strong>3K+</strong><span>Followers</span></div><div><strong>200+</strong><span>Tents & Guides</span></div><div><strong>100%</strong><span>Sky Love</span></div></div><div class="profile-quote">“Same sky,<br>different stories.”<span>✦</span></div></section>
  <section class="updates" id="updates"><h3 class="panel-title">⚑ Latest Updates</h3><div class="update"><span class="star">✦</span><div><small>Oct 10, 2026</small>New Hidden Forest Tent (Fast & Easy)</div></div><div class="update"><span class="star">✦</span><div><small>Oct 7, 2026</small>Penguin OBB Shortcut Added</div></div><div class="update"><span class="star">✦</span><div><small>Oct 5, 2026</small>Wasteland & Bird OBB (Coming Soon)</div></div><div class="update"><span class="star">✦</span><div><small>Oct 1, 2026</small>Eden Tents Guide Updated</div></div></section>
  <section class="quick"><h3 class="panel-title">❖ Quick Links</h3><a href="https://www.instagram.com/that_sky_senpai/" target="_blank" rel="noreferrer">◎ &nbsp; Instagram <span>›</span></a><a href="https://www.youtube.com/" target="_blank" rel="noreferrer">▶ &nbsp; YouTube <span>›</span></a><a href="https://www.tiktok.com/" target="_blank" rel="noreferrer">♪ &nbsp; TikTok <span>›</span></a><a href="https://discord.com/" target="_blank" rel="noreferrer">◉ &nbsp; Discord <span>›</span></a><div class="quick-bottom"></div></section>
 </aside>
